@@ -1,0 +1,63 @@
+Screen1 As screen:
+    OnVisible: |-
+        =UpdateContext({Demo1Datasource:Demo1})
+
+    Button1 As button:
+        Fill: =RGBA(127, 178, 57, 1)
+        OnSelect: =Navigate(Screen2,ScreenTransition.Cover)
+        PaddingRight: =6.59
+        PaddingTop: =6.59
+        Size: =19.77
+        Text: ="Button"
+        Width: =210.83
+        X: =97.51
+        Y: =257
+        ZIndex: =1
+
+    Label1 As label:
+        Height: =92
+        PaddingRight: =6.59
+        PaddingTop: =6.59
+        Size: =17.13
+        Text: =Screen1.Name
+        Width: =461.20
+        X: =97.51
+        Y: =56
+        ZIndex: =3
+
+    Component1_1 As Component1:
+        Behaviour: |-
+            =Patch(Demo1,Defaults(Demo1),{Title:Component1_1.TextOutput})
+        Height: =350
+        ScreenName: =Screen1.Name
+        Width: =1116
+        X: =Slider1.Value
+        Y: =148
+        ZIndex: =4
+
+    Label1_1 As label:
+        Height: =92
+        PaddingRight: =6.59
+        PaddingTop: =6.59
+        Size: =46.12
+        Text: =Component1_1.TextOutput
+        Width: =461.20
+        X: =129.14
+        Y: =406
+        ZIndex: =5
+
+    Slider1 As slider:
+        Max: =500
+        X: =769
+        Y: =823
+        ZIndex: =6
+
+    Label4 As label:
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Bold
+        Size: =30
+        Text: =Slider1.Value
+        X: =1513
+        Y: =823
+        ZIndex: =7
+

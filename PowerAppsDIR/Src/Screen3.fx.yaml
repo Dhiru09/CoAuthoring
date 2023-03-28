@@ -1,0 +1,60 @@
+Screen3 As screen:
+
+    Gallery3 As gallery.galleryHorizontal:
+        DelayItemLoading: =true
+        Height: =119
+        Items: =colHeader
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =6.59
+        TemplateSize: =355.78
+        Width: =1012.01
+        X: =0.00
+        Y: =126
+        ZIndex: =1
+
+        Label5 As label:
+            Align: =Align.Center
+            Height: =Parent.TemplateHeight
+            OnSelect: =Select(Parent)
+            Overflow: =Overflow.Scroll
+            PaddingRight: =6.59
+            PaddingTop: =52.71
+            Size: =17.13
+            Text: =ThisItem.Value
+            Width: =355.78
+            X: =0.00
+            ZIndex: =1
+
+    Gallery5 As gallery.galleryVertical:
+        Height: =398
+        Items: =CustomGallerySample
+        Layout: =Layout.Vertical
+        TemplateSize: =102
+        Width: =1012.01
+        X: =0.00
+        Y: =Gallery3.Y+Gallery3.Height
+        ZIndex: =1
+
+        Gallery6 As gallery.galleryHorizontal:
+            DelayItemLoading: =true
+            Height: =102
+            Items: =CustomGallerySample
+            LoadingSpinner: =LoadingSpinner.Data
+            ShowScrollbar: =false
+            TemplatePadding: =6.59
+            TemplateSize: =421.67
+            Width: =1702.49
+            X: =0.00
+            ZIndex: =1
+
+            Label7 As label:
+                OnSelect: =Select(Parent)
+                PaddingRight: =6.59
+                PaddingTop: =6.59
+                Size: =17.13
+                Text: =ThisItem.SampleHeading
+                Width: =197.66
+                X: =52.71
+                Y: =40
+                ZIndex: =1
+

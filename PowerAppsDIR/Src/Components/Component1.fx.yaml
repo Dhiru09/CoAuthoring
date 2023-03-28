@@ -1,0 +1,46 @@
+Component1 As CanvasComponent:
+    Behaviour: ="Text"
+    Fill: =RGBA(251, 188, 159, 1)
+    Height: =640
+    ScreenName: ="Text"
+    TableDatasource: |-
+        ={SampleStringField: Demo1}
+    TextOutput: =TextInput1.Text
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Button2 As button:
+        DisplayMode: |-
+            =Switch(
+                Component1.ScreenName,
+                "Screen1",
+                If(
+                    !IsBlank(Component1.TextOutput),
+                    DisplayMode.Edit,
+                    DisplayMode.Disabled
+                ),
+                "Screen2",
+                DisplayMode.Edit
+            )
+        OnSelect: =Component1.Behaviour()
+        PaddingRight: =6.59
+        PaddingTop: =6.59
+        Size: =19.77
+        Text: ="Button"
+        Width: =210.83
+        X: =275.40
+        Y: =261
+        ZIndex: =1
+
+    TextInput1 As text:
+        Default: =""
+        PaddingRight: =6.59
+        PaddingTop: =6.59
+        Size: =17.13
+        Width: =421.67
+        X: =169.99
+        Y: =147
+        ZIndex: =2
+

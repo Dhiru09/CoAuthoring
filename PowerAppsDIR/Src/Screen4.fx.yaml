@@ -1,0 +1,80 @@
+Screen4 As screen:
+
+    Gallery2 As gallery.galleryVertical:
+        Height: =576
+        Items: =colValues
+        Layout: =Layout.Vertical
+        TemplateSize: =127
+        Width: =1012.01
+        X: =0.00
+        Y: =192
+        ZIndex: =1
+
+        Label2 As label:
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Select(Parent)
+            PaddingRight: =6.59
+            PaddingTop: =6.59
+            Size: =39.53
+            Text: =ThisItem.Value1
+            Width: =197.66
+            X: =52.71
+            Y: =40
+            ZIndex: =1
+
+        Label3 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =62
+            OnSelect: =Select(Parent)
+            PaddingRight: =6.59
+            PaddingTop: =6.59
+            Size: =39.53
+            Text: =ThisItem.Value2
+            Visible: =CountRows(colValues)>=2
+            Width: =259.59
+            X: =250.37
+            Y: =40
+            ZIndex: =2
+
+        Label3_1 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =62
+            OnSelect: =Select(Parent)
+            PaddingRight: =6.59
+            PaddingTop: =6.59
+            Size: =39.53
+            Text: =ThisItem.Value2
+            Visible: =CountRows(colValues)>=3
+            Width: =259.59
+            X: =509.96
+            Y: =40
+            ZIndex: =3
+
+        Label3_2 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =62
+            OnSelect: =Select(Parent)
+            PaddingRight: =6.59
+            PaddingTop: =6.59
+            Size: =39.53
+            Text: =ThisItem.Value2
+            Visible: =CountRows(colValues)>=4
+            Width: =259.59
+            X: =803.81
+            Y: =40
+            ZIndex: =4
+
+        Label3_3 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =62
+            OnSelect: =Select(Parent)
+            PaddingRight: =6.59
+            PaddingTop: =6.59
+            Size: =39.53
+            Text: =ThisItem.Value2
+            Visible: =CountRows(colValues)>=5
+            Width: =259.59
+            X: =1047.58
+            Y: =40
+            ZIndex: =5
+

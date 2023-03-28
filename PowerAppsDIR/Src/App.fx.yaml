@@ -1,0 +1,22 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |-
+        =ClearCollect(colHeader,["Test1","Test2","Test3","LongTest","LongLongTest","HeaderHeaderHeader","HeaderHeaderHeaderHeaderHeaderHeaderHeaderHeaderHeaderHeaderHeaderHeader","HeaderHeaderHeaderHeaderHeaderHeaderHeaderHeaderHeaderHeaderHeaderHeader","HeaderHeaderHeaderHeaderHeaderHeaderHeaderHeaderHeaderHeaderHeaderHeader"]);ClearCollect(colValues,[{Value1:"A",Value2:"ValueA"},{Value1:"B",Value2:"ValueB"},{Value1:"C",Value2:"ValueC"},{Value1:"D",Value2:"ValueD"}]);
+        ClearCollect(BreadcrumbValues,Table(
+            {
+                ItemKey: "1",
+                ItemDisplayName: "General",
+                ItemClickable: true
+            },
+            {
+                ItemKey: "2",
+                ItemDisplayName: "Document",
+                ItemClickable: true
+            },
+            {
+                ItemKey: "3",
+                ItemDisplayName: "Team",
+                ItemClickable: true
+            }
+        ))
+

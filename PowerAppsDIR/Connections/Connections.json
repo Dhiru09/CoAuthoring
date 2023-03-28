@@ -1,0 +1,30 @@
+{
+  "ae81f75d-e06d-434f-b62e-ad506049c389": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1623/1.0.1623.3210/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://mobile05.sharepoint.com/sites/PowerAppTraining": {
+        "dataSources": {
+          "Demo1": {
+            "tableName": "98ea6db4-cbe5-4600-a8e3-1e7b11a5c9d4"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Demo1"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "ae81f75d-e06d-434f-b62e-ad506049c389"
+  }
+}

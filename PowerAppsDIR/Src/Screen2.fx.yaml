@@ -1,0 +1,34 @@
+Screen2 As screen:
+
+    Button3 As button:
+        Fill: =RGBA(203, 102, 102, 1)
+        OnSelect: =Navigate(Screen1,ScreenTransition.Cover)
+        PaddingRight: =6.59
+        PaddingTop: =6.59
+        Size: =19.77
+        Text: ="Button"
+        Width: =210.83
+        X: =52.71
+        Y: =40
+        ZIndex: =2
+
+    Component1_2 As Component1:
+        Behaviour: |-
+            =Patch(Demo1,Defaults(Demo1),{Title:Component1_2.TextOutput})
+        ScreenName: =Screen2.Name
+        Width: =843.34
+        X: =168.67
+        Y: =52
+        ZIndex: =3
+
+    Label1_2 As label:
+        Height: =94
+        PaddingRight: =6.59
+        PaddingTop: =6.59
+        Size: =46.12
+        Text: =Component1_2.TextOutput
+        Width: =674.67
+        X: =129.14
+        Y: =406
+        ZIndex: =4
+

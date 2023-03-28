@@ -1,0 +1,40 @@
+Screen6 As screen:
+    OnVisible: |-
+        =ClearCollect(BreadcrumbValues,Table(
+            {
+                ItemKey: "1",
+                ItemDisplayName: "General",
+                ItemClickable: true
+            },
+            {
+                ItemKey: "2",
+                ItemDisplayName: "Document",
+                ItemClickable: true
+            }
+        ))
+
+    "Breadcrumb2 As 'Fluent Breadcrumb (1.0.19)'.pcfdataset":
+        DisplayMode: =DisplayMode.Edit
+        Height: =90
+        Items: =BreadcrumbValues
+        Width: =1293
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+    Button5 As button:
+        OnSelect: =Navigate(Screen5)
+        Text: ="Button"
+        X: =1016
+        Y: =400
+        ZIndex: =2
+
+    "ProgressIndicator1 As 'Fluent Progress Indicator (1.0.19) Preview'":
+        DisplayMode: =DisplayMode.Edit
+        Height: =290
+        PercentComplete: =500
+        Width: =1600
+        X: =156
+        Y: =516
+        ZIndex: =3
+
